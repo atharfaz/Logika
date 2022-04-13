@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> bilangan <input type="number" id="mynumber1"> <button onclick="check1()">check1</button></p>
+    <p> bilangan <input type="number"id="mynumber2"> <button onclick="check2()">check2</button></p>
+    <p> bilangan <input type="number"id="mynumber3"> <button onclick="check3()">check3</button></p>
+    <p> bilangan <input type="number"id="mynumber4"> <button onclick="check4()">check4</button></p>
+    <p> bilangan <input type="number"id="mynumber5"> <button onclick="check5()">check5</button></p>
+    <p id="check"></p>
+    <p id="check2"></p>
+    <p id="check3"></p>
+    <p id="check4"></p>
+    <p id="check5"></p>
+</body>
+<script>
+function check1(){
+    var bilangan1 = document.getElementById("mynumber1").value
+    if(bilangan1 % 2 == 0)
+    document.getElementById("check").innerText = "Bilangan Genap"
+    else{
+        document.getElementById("check").innerText = "Bilangan ganjil"
+    }
+}
+function check2(){
+    var bilangan1 = document.getElementById("mynumber2").value
+    if(bilangan1 % 2 == 0)
+    document.getElementById("check2").innerText = "Bilangan Genap"
+    else{
+        document.getElementById("check2").innerText = "Bilangan ganjil"
+    }
+}
+function check3(){
+    var bilangan1 = document.getElementById("mynumber3").value
+    if(bilangan1 % 2 == 0)
+    document.getElementById("check3").innerText = "Bilangan Genap"
+    else{
+        document.getElementById("check3").innerText = "Bilangan ganjil"
+    }
+}
+function check4(){
+    var bilangan1 = document.getElementById("mynumber4").value
+    if(bilangan1 % 2 == 0)
+    document.getElementById("check4").innerText = "Bilangan Genap"
+    else{
+        document.getElementById("check4").innerText = "Bilangan ganjil"
+    }
+}
+function check5(){
+    var bilangan1 = document.getElementById("mynumber5").value
+    if(bilangan1 % 2 == 0)
+    document.getElementById("check5").innerText = "Bilangan Genap"
+    else{
+        document.getElementById("check5").innerText = "Bilangan ganjil"
+    }
+}
+</script>
+</html>

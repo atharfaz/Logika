@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getMax()">check</button>
+    <p id="max"></p>
+    <script>
+// nilai-nilai campuran
+let arr = [ 30, { jumlah : "jeruk" },10, { jumlah : "durian" },10, { jumlah : "mangga" },10, { jumlah : "apple" },10, { jumlah : "pepaya" }, true, function() { alert('hello'); } ];
+
+// mendapatkan objek pada indeks 1 dan menampilkan namanya
+alert( arr[1].jumlah ); // John
+
+// mendapatkan fungsi pada indeks 3 dan menjalankannya
+arr[3](); // hello
+    </script>
+</body>
+</html>

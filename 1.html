@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>hobingodingcom</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            h2, h4{
+                margin: 0;
+            }
+            p#demo {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Program Menentukan Bilangan Ganjil Genap</h2>
+
+        <br >
+
+        <p>Bilangan <input type="number" id="myNumber"> <button onclick="cekGanjilGenap()">Cek</button></p>
+        <p id="demo"></p>
+        <p>Bilangan <input type="number" id="myNumber2"> <button onclick="cekGanjilGenap()">Cek</button></p>
+        <p id="demo"></p>
+        <script>
+
+            function cekGanjilGenap(){
+                var bilangan1 = document.getElementById("myNumber").value
+                var bilangan2 = document.getElementById("myNumber2").value
+                if(bilangan1 > 2)
+                    document.getElementById("demo").innerHTML = "Terbesar adalah " + bilangan1
+                else
+                    document.getElementById("demo").innerHTML = "Terbesar adalah " + bilangan2
+            }
+        </script>
+    </body>
+</html>

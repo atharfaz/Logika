@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cara Menyimpan Nilai Kedalam Array Kosong Dengan Form HTML Dan JavaScript</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 10%
+		}
+		li { margin: 5px 0 }
+	</style>
+</head>
+
+<body>
+    <h1> INPUT AN </h1>
+<input type="number" id="nomor" />
+<input type="button" onclick="add();" value="add" />
+<input type="button" onclick="Terbesar();" value="add" />
+<ul id="tampil"></ul>
+<ul id="max"></ul>
+
+</body>
+</html>
+ 
+<script type="text/javascript">
+var tampung_array = [];
+
+function add() {
+   var masukan = document.getElementById('nomor');
+   tampung_array.push(masukan.value);
+   masukan.value = '';
+   show();
+}
+
+function show() {
+   var html = '';
+   for (var i=0; i<tampung_array.length; i++) {
+      html += '<li>' + tampung_array[i] + '</li>';
+   }
+   var tampil = document.getElementById('tampil');
+   tampil.innerHTML = html;
+}
+function Terbesar(){
+    var max = Math.max.apply(null,tampung_array);
+    document.getElementById("max").innerHTML = 'Data terbesar '+max; 
+    max.innerHTML = html;
+
+}
+</script>
